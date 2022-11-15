@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/services/font.css">
+    <link rel="stylesheet" href="assets/css/services/normalize.css">
+    <link rel="stylesheet" href="assets/css/services/variables.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/bar.css">
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
     <title>Samoyedo</title>
 
-    <script defer src="assets/scripts/index.js"></script>
+    <script defer src="assets/scripts/Position.js"></script>
+    <script defer src="assets/scripts/ScrollHandler.js"></script>
+    <script defer src="assets/scripts/ThemeChange.js"></script>
 </head>
 <body>
     
@@ -46,7 +51,7 @@
 
     <main id="main">
 
-        <div id="overflow-dark" class="overflow-dark overflow-full overflow-theme">
+        <div id="overflow-dark" class="overflow-full overflow-theme">
 
             <div class="dark-theme main-theme">
                 <div class="background">
@@ -65,11 +70,14 @@
         </div>
 
 
-        <div id="overflow-light" class="overflow-light overflow-theme">
+        <div id="overflow-light" class="overflow-hide overflow-theme">
 
             <div class="light-theme main-theme">
                 <div class="background">
                     <img  src="assets/images/main/test2.jpg" alt="">
+                </div>
+                <div id="main-title2" class="background title">
+                    <img src="assets/images/main/title.png" alt="">
                 </div>
             </div>
         </div>
@@ -78,7 +86,11 @@
 
 
     <div id="bar" class="bar">
-        bar frame
+        <div class="container">
+            <h2>
+                bar frame
+            </h2>
+        </div>
     </div>
 
 

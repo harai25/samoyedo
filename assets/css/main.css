@@ -3,7 +3,7 @@ body {
     font-size: 32px;
 }
 header {
-    height: 104px;
+    height: var(--header-height);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ header {
     z-index: 9999;
 }
 header .header-container {
-    width: 1065px;
+    width: var(--container-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,60 +39,9 @@ header .header-container {
 main {
     height: 100vh;
     width: 100%;
-    /* background: #041338; */
     position: relative;
+    cursor: crosshair;
 }
-
-.main-theme {
-    position: absolute;
-    top: -500px;
-    left: -500px;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;
-}
-.overflow-full .main-theme {
-    top: 0;
-    left: 0;
-}
-
-.overflow-hide .main-theme {
-    transition: all 0s ease 0.5s;
-
-}
-
-.dark-theme {
-    background: linear-gradient(180deg, #041338 0%, #051439 28.65%, #081842 53.12%, #0C1C4B 100%);
-}
-
-.overflow-theme {
-    position: absolute;
-    top: 500px;
-    left: 500px;
-    width: 10px;
-    height: 10px;
-    overflow: hidden;
-    border-radius: 50%;
-    transition: all 0s ease 0.5s;
-}
-
-.light-theme {
-    background: lightblue;
-}
-
-.overflow-full {
-    transition: all 0.5s ease;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
-    z-index: 2;
-}
-
 main .background {
     position: absolute;
     top: 0;
@@ -104,14 +53,8 @@ main .background {
     align-items: center;
     
 }
-
 main .background-img {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
-}
-
-.bar{
-    height: 100vh;
-    width: 100%;
 }

@@ -1,0 +1,14 @@
+.bar{
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    background: #151412;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.bar .container {
+    width: var(--container-width);
+    /* margin-top: var(--header-height); */
+
+}
