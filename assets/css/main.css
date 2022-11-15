@@ -10,7 +10,7 @@ header {
     position: fixed;
     top: 0;
     color: white;
-    z-index: 2;
+    z-index: 9999;
 }
 header .header-container {
     width: 1065px;
@@ -40,8 +40,57 @@ main {
     height: 100vh;
     width: 100%;
     /* background: #041338; */
-    background: linear-gradient(180deg, #041338 0%, #051439 28.65%, #081842 53.12%, #0C1C4B 100%);
     position: relative;
+}
+
+.main-theme {
+    position: absolute;
+    top: -500px;
+    left: -500px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.overflow-full .main-theme {
+    top: 0;
+    left: 0;
+}
+
+.overflow-hide .main-theme {
+    transition: all 0s ease 0.5s;
+
+}
+
+.dark-theme {
+    background: linear-gradient(180deg, #041338 0%, #051439 28.65%, #081842 53.12%, #0C1C4B 100%);
+}
+
+.overflow-theme {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0s ease 0.5s;
+}
+
+.light-theme {
+    background: lightblue;
+}
+
+.overflow-full {
+    transition: all 0.5s ease;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    z-index: 2;
 }
 
 main .background {
@@ -53,6 +102,7 @@ main .background {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 main .background-img {

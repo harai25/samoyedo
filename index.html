@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <title>Samoyedo</title>
+
+    <script defer src="assets/scripts/index.js"></script>
 </head>
 <body>
     
@@ -40,25 +44,40 @@
     </header>
 
 
-    <main>
-        <div class="dark-theme">
-            <div class="background">
-                <img class="background-img" src="assets/images/main/night_background.png" alt="">
-            </div>
-            <div class="background cloud-1">
-                <img src="assets/images/main/cloud_night1.png" alt="">
-            </div>
-            <div class="background cloud-2">
-                <img src="assets/images/main/cloud_night2.png" alt="">
-            </div>
-            <div class="background title">
-                <img src="assets/images/main/title.png" alt="">
+    <main id="main">
+
+        <div id="overflow-dark" class="overflow-dark overflow-full overflow-theme">
+
+            <div class="dark-theme main-theme">
+                <div class="background">
+                    <img class="background-img" src="assets/images/main/night_background.png" alt="">
+                </div>
+                <div id="cloud-1" class="background cloud-1">
+                    <img src="assets/images/main/cloud_night1.png" alt="">
+                </div>
+                <div id="cloud-2" class="background cloud-2">
+                    <img src="assets/images/main/cloud_night2.png" alt="">
+                </div>
+                <div id="main-title" class="background title">
+                    <img src="assets/images/main/title.png" alt="">
+                </div>
             </div>
         </div>
+
+
+        <div id="overflow-light" class="overflow-light overflow-theme">
+
+            <div class="light-theme main-theme">
+                <div class="background">
+                    <img  src="assets/images/main/test2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
-    <div class="bar">
+    <div id="bar" class="bar">
         bar frame
     </div>
 
