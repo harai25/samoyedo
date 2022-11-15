@@ -1,0 +1,23 @@
+body {
+    font-family: 'VT323';
+    font-size: 32px;
+}
+
+header {
+    height: 104px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-container {
+    width: 1065px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll-navigation {
+    display: flex;
+    gap: 20px;
+}
