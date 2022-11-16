@@ -11,6 +11,13 @@ header {
     top: 0;
     color: white;
     z-index: 9999;
+    transition: all 0.3s ease 0.2s;
+    
+}
+.sticky-header {
+    height: 60px;
+    border-bottom: 1px black;
+    background: rgba(0, 0, 0, 0.5);
 }
 header .header-container {
     width: var(--container-width);
