@@ -26,7 +26,7 @@
     border-radius: 50%;
     transition: all 0s ease-in var(--theme-change-duration);
 }
-.overflow-full .main-theme {
+.overflow-default .main-theme {
     top: 0;
     left: 0;
 }
@@ -34,12 +34,27 @@
     transition: all 0s ease-in var(--theme-change-duration);
 
 }
-.overflow-full {
-    transition: all var(--theme-change-duration) ease-in;
+.overflow-default {
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     border-radius: 0;
+}
+.overflow-full {
+    transition: all var(--theme-change-duration) ease-in;
     z-index: 2;
 }
+/* .overflow-full .main-theme {
+    top: 25vh;
+    left: 25vh;
+}
+.overflow-full {
+    transition: all var(--theme-change-duration) ease-in;
+    top: -25vh;
+    left: -25vh;
+    width: 150vh;
+    height: 150vh;
+    border-radius: 50%;
+    z-index: 2;
+} */
