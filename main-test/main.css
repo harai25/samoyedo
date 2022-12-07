@@ -10,14 +10,19 @@ body {
 .wrapper-1 {
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(180deg, #020C25 0%, #111119 100%);
 
 }
 .container {
     position: relative;
 
-    width: 2520px;
-    height: 1440px;  
+    width: 100vw;
+    height: 100vh;
+
+    /* width: 2520px; */
+    /* height: 1440px;   */
     max-height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -38,8 +43,9 @@ img {
 }
 .s-water {
     width: 100%;
-    height: 32.85%;
-    top: 67.15%;
+    /* height: 32.85%; */
+    height: 48.75%;
+    top: 67.1527788%;
     z-index: 20;
 }
 .s-title {
@@ -59,27 +65,8 @@ img {
     z-index: 24;
 }
 
-/* .copy {
-    margin: 50px;
-    border: 2px solid red;
+@media (min-width: 150vh) {
+    img {
+        object-fit: initial;
+    }
 }
-.wrapper-1 {
-    width: 2520px;
-    height: 1440px;    
-}
-.wrapper-2 {
-    width: 1500px;
-    height: 1000px;
-}
-.wrapper-3 {
-    width: 5520px;
-    height: 1440px;
-}
-.wrapper-4 {
-    width: 1080px;
-    height: 1024px;
-}
-.wrapper-5 {
-    width: 414px;
-    height: 900px;
-} */
