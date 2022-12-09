@@ -1,14 +1,30 @@
 .main-theme {
-    position: absolute;
-    top: calc(-50vh - 50px);
-    left: -50vw;
+    /* visibility: hidden; */
+    /* display: none; */
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all var(--theme-change-duration) ease-in;
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    will-change: clip-path;
 }
+
+.visible-theme {
+    transition: clip-path ease 2s;
+    clip-path: circle(100%);
+    z-index: 2;
+}
+.hidden-theme {
+    clip-path: circle(0%);
+    transition: clip-path ease 0s 2s;
+}
+
+
 .dark-theme {
     background: linear-gradient(180deg, #041338 0%, #051439 28.65%, #081842 53.12%, #0C1C4B 100%);
 }
@@ -16,30 +32,3 @@
     background: lightblue;
 }
 
-.overflow-theme {
-    position: absolute;
-    top: calc(50vh + 50px);
-    left: 50vw;
-    width: 10px;
-    height: 10px;
-    overflow: hidden;
-    border-radius: 50%;
-    transition: all 0s ease-in var(--theme-change-duration);
-}
-.overflow-full .main-theme {
-    top: 0;
-    left: 0;
-}
-.overflow-hide .main-theme {
-    transition: all 0s ease-in var(--theme-change-duration);
-
-}
-.overflow-full {
-    transition: all var(--theme-change-duration) ease-in;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-    z-index: 2;
-}

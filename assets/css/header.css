@@ -1,0 +1,40 @@
+header {
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 9999;
+    transition: all 0.3s ease 0.2s;
+    
+}
+.sticky-header {
+    height: 60px;
+    border-bottom: 1px black;
+    background: rgba(0, 0, 0, 0.5);
+}
+header .header-container {
+    width: var(--container-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.scroll-navigation {
+    display: flex;
+    gap: 20px;
+}
+.connect-btn {
+    background: #553FA4;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 0px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px 4px;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
