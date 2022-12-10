@@ -1,9 +1,33 @@
 const themes = document.querySelectorAll('.main-theme')
 
-document.addEventListener('click', () => {
-    themes.forEach((e) => {
-        e.classList.toggle('visible-theme')
+const dark = document.getElementById('dark-theme')
+const light = document.getElementById('light-theme')
 
-        e.classList.toggle('hidden-theme')
-    })
+let isDark = true
+let timeout = null
+let isStop = false
+
+function switchTheme(one, two) {
+    one.classList.add('visible-theme')
+    one.classList.remove('hidden-theme')
+    two.classList.remove('visible-theme')
+    isStop = true
+    one.addEventListener('transitionend', () => {
+        two.classList.add('hidden-theme')
+        isStop = false
+
+    }, {once: true})
+}
+
+document.addEventListener('click', () => {
+    if (isStop) {
+        return
+    }
+    
+    if (isDark) {
+        switchTheme(light, dark)
+    } else {
+        switchTheme(dark, light)
+    }
+    isDark = !isDark
 })

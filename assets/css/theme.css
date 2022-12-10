@@ -1,13 +1,9 @@
 .main-theme {
-    /* visibility: hidden; */
-    /* display: none; */
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all var(--theme-change-duration) ease-in;
-
     position: absolute;
     top: 0;
     z-index: 1;
@@ -15,13 +11,12 @@
 }
 
 .visible-theme {
-    transition: clip-path ease 2s;
-    clip-path: circle(100%);
+    transition: clip-path ease-in-out 1s;
+    clip-path: circle(75%);
     z-index: 2;
 }
 .hidden-theme {
     clip-path: circle(0%);
-    transition: clip-path ease 0s 2s;
 }
 
 
