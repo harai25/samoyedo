@@ -1,15 +1,36 @@
-const cloud1El = document.getElementById('cloud-1')
-const cloud2El = document.getElementById('cloud-2')
-const mainTitleEl = document.getElementById('main-title')
-const mainTitle2El = document.getElementById('main-title2')
 const headerEl = document.getElementById('header')
 
-function mainHandle() {
-    const transformTitle = `translateY(${-window.scrollY/3.5}px) scale(${1+window.scrollY/mainPosition.height/6})`
-    cloud1El.style.transform = `translateY(${-window.scrollY/2}px) scale(${1+window.scrollY/mainPosition.height/9})`
-    cloud2El.style.transform = `translateY(${-window.scrollY/3}px) scale(${1+window.scrollY/mainPosition.height/12})`
-    mainTitleEl.style.transform = transformTitle
-    mainTitle2El.style.transform = transformTitle
+const sSky = document.querySelectorAll('.s-sky')
+const sMiddle = document.querySelectorAll('.s-middle')
+const sWater = document.querySelectorAll('.s-water')
+const sSun = document.querySelectorAll('.s-sun')
+const sMirror = document.querySelectorAll('.s-mirror')
+
+function mainHandle(process) {
+    const skyTransform = `translateY(${-process * 6.8580542}%)`
+    const middleTransform = `translateY(${-process * 45.0617284}%)`
+    const waterTransform = `translateY(${-process * 32.6210826}%)`
+    const sunTransform = `translateY(${-process * 48.8188976}%) translateX(-50%)`
+    const mirrorTransform = `translateY(${-process * 252.8735632}%) translateX(-50%) scaleY(${1 - process * 0.586206897}) scaleX(${1 - -process * 0.0857142857})`
+
+    sSky.forEach(e => {
+        e.style.transform = skyTransform
+    })
+    sMiddle.forEach(e => {
+        e.style.transform = middleTransform
+    })
+    sWater.forEach(e => {
+        e.style.transform = waterTransform
+    })
+    sSun.forEach(e => {
+        e.style.transform = sunTransform
+    })
+    sMirror.forEach(e => {
+        e.style.transform = mirrorTransform
+    })
+
+    console.log('handler')
+
 }
 
 function scrollHandler(e) {
@@ -21,8 +42,9 @@ function scrollHandler(e) {
         headerEl.classList.remove('sticky-header')
     }
 
-    if (scrollY < mainPosition.bottom - mainPosition.height/4) {
-        mainHandle()
+    
+    if (scrollY < mainPosition.bottom - window.innerHeight) {
+        mainHandle(1 - (mainPosition.bottom - window.innerHeight - scrollY) / window.innerHeight)
     }
 }
 
