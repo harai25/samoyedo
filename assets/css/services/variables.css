@@ -1,5 +1,6 @@
 :root {
     --header-height: 104px;
+    --header-height-min: 60px;
     --container-width: 1065px;
     --theme-change-duration: 0.5s;
 }

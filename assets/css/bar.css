@@ -1,5 +1,5 @@
 .bar{
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
     width: 100%;
     background: #151412;
     color: white;
@@ -14,8 +14,14 @@
 
 }
 
-.bar .container {
-    width: var(--container-width);
-    /* margin-top: var(--header-height); */
+.bar .frame {
+    margin-top: var(--header-height-min);
+    max-height: calc(100vh- var(--header-height-min));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.bar .frame img {
+    max-height: 100%;
 }
