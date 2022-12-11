@@ -40,7 +40,7 @@
     height: 58.2545142%;
     opacity: 1;
     transform: none;
-    transition: transform 0.5s;
+    transition: all 0.5s;
 }
 
 .bar .frame .wolf1.hide {
@@ -61,7 +61,7 @@
     width: 100%;
     height: 100%;
     transform: none;
-    transition: transform 0.5s;
+    transition: all 0.5s;
     opacity: 1;
 }
 
