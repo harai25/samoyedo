@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/bar.css">
+    <link rel="stylesheet" href="assets/css/nftMovableList.css">
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
     <title>Samoyedo</title>
 
     <script defer src="assets/scripts/Position.js"></script>
+    <script defer src="assets/scripts/MainHandler.js"></script>
+    <script defer src="assets/scripts/BarHandler.js"></script>
     <script defer src="assets/scripts/ScrollHandler.js"></script>
     <script defer src="assets/scripts/ThemeChange.js"></script>
 </head>
@@ -79,8 +82,19 @@
 
     <div id="bar" class="bar">
         <div class="frame">
-            <img src="assets/images/bar/background.png" alt="">
+            <img class="background" src="assets/images/bar/background.png" alt="">
+            <img id="wolf1" class="wolf1 hide" src="assets/images/bar/1wolf.png" alt="">
+            <div id="wolf2" class="wolf2 hide">
+                <img src="assets/images/bar/2wolf.png" alt="">
+            </div>
         </div>
+        <div class="text">
+            Samoyedo begins with a series of 2,002 digital collectibles. The collection features captivating pixel art developed to live on Aptos chain forever.
+        </div>
+    </div>
+
+    <div class="nft-movable-list">
+
     </div>
 
 
