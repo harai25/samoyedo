@@ -7,22 +7,24 @@
     max-width: 100%;
 }
 
-@keyframes movable-list {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
 
 .quue1,
 .quue2 {
     display: flex;
     flex: 0 0 auto;
     min-width: 100%;
-    animation: movable-list  30s infinite linear;
+    animation: movable-list  30s infinite;
 }
+
+@keyframes movable-list {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 .nft-movable-list img{
     height: 100%;

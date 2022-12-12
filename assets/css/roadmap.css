@@ -1,0 +1,16 @@
+.roadmap {
+    height: 300vh;
+}
+
+.roadmap-content {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #0B0A31;
+    display: flex;
+    align-items: center;
+}
+
+.roadmap-content img {
+    max-height: 100%;
+}
