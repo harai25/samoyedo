@@ -1,4 +1,29 @@
 .nft-movable-list {
     height: 288px;
     background: #000717;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+@keyframes movable-list {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.quue1,
+.quue2 {
+    display: flex;
+    flex: 0 0 auto;
+    min-width: 100%;
+    animation: movable-list  30s infinite linear;
+}
+
+.nft-movable-list img{
+    height: 100%;
 }
