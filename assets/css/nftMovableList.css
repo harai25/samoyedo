@@ -13,7 +13,7 @@
     display: flex;
     flex: 0 0 auto;
     min-width: 100%;
-    animation: movable-list  30s infinite;
+    animation: movable-list  60s infinite linear;
 }
 
 @keyframes movable-list {
@@ -28,4 +28,5 @@
 
 .nft-movable-list img{
     height: 100%;
+    width: 288px;
 }
