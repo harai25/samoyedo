@@ -1,0 +1,13 @@
+.team {
+    background: linear-gradient(0deg, #0B0A31, #0B0A31), #161003;
+    height: 100vh;
+    border-top: 5px solid black;
+}
+
+.team .title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 154px;
+}

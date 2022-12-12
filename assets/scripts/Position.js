@@ -8,10 +8,16 @@ barPosition = {
     bottom: 0,
     height: 0,
 }
+roadmapPosition = {
+    top: 0,
+    bottom: 0,
+    height: 0,
+}
 
 function resizeHandler() {
     mainPosition = getVerticalPositionById('main')
     barPosition = getVerticalPositionById('bar')
+    roadmapPosition = getVerticalPositionById('roadmap')
 }
 
 function getVerticalPositionById(id) {

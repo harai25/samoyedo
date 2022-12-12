@@ -14,6 +14,8 @@ function scrollHandler(e) {
     }
 
     barHandler()
+
+    roadmapHandler()
 }
 
 window.addEventListener('scroll', scrollHandler)

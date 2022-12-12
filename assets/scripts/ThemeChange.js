@@ -19,7 +19,7 @@ function switchTheme(one, two) {
     }, {once: true})
 }
 
-document.addEventListener('click', () => {
+main.addEventListener('click', () => {
     if (isStop) {
         return
     }
